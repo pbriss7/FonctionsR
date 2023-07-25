@@ -1,11 +1,11 @@
 Package: fonctionsPerso
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Fonctions personnelles
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Date: 2023-07-25
+Author: Pascal Brissette
+Maintainer: The package maintainer <pascal.brissette@mcgill.ca>
+Description: L'extention propose quelques fonctions utiles, telles `activerPaquets()`, qui permet d'installer au besoin, puis d'activer une liste de paquets depuis CRAN. 
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
