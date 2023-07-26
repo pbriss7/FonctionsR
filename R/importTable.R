@@ -3,6 +3,7 @@
 importTable_f <- function(chemin) {
   library(data.table)
   library(readxl)
+  library(janitor)
   # Demander le chemin du fichier
   # reponse <- readline("Importation des données. Fournissez le lien exact du fichier de données, sans guillemets:  ")
 
@@ -22,5 +23,9 @@ importTable_f <- function(chemin) {
   } else {
     x <- read_excel(chemin, sheet = 1) |> setDT()
   }
+
+  # Modification des noms de colonnes au besoin
+  names(x) <- janitor::make_clean_names(names(x))
+
   return(x)
 }
